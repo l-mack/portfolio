@@ -1,0 +1,58 @@
+// about styles 
+
+.aboutFlex{
+    @include centerFlex();
+    margin-top: 40px;
+
+    .aboutTextBox{
+        padding: 10%;
+    }
+}
+
+h3{
+    font-family: $primaryFont;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.boldWord{
+    font-weight: 900;
+}
+
+p{
+    @include secondaryFont();
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+i{
+    font-size: 5rem;
+    padding: 20px 45px;
+    color: $accent;
+}
+
+.skillsFlex,
+.skillsGrid li,
+.portfolioTextBox{
+    @include centerFlex();
+    flex-direction: column;
+    margin-top: 10%;
+
+    .skillsGrid{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.portfolioGrid{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+
+    li{
+        margin: 5%;
+    }
+}
